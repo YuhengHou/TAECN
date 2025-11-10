@@ -1,0 +1,12 @@
+<config>
+    <!-- Each link gets its own /30 subnet (2 usable IPs) -->
+
+    <!-- Host-Leaf links -->
+    <interface hosts="host[*]" address="10.0.0.x" netmask="255.255.255.252"/>
+    <interface hosts="leaf[*]" address="10.0.0.x" netmask="255.255.255.252"/>
+
+    <!-- Leaf-Spine links -->
+    <interface hosts="leaf[*]" address="10.0.1.x" netmask="255.255.255.252"/>
+    <interface hosts="spine[*]" address="10.0.1.x" netmask="255.255.255.252"/>
+</config>
+

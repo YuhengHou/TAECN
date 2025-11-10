@@ -1,0 +1,11 @@
+﻿results/
+out/
+*.vec
+*.sca
+*.vci
+*.elog
+*.csv
+*.png
+*.bak
+*.pkl
+*.tmp
